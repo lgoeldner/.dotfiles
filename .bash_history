@@ -700,3 +700,5 @@ cargo run
 cargo test 11
 cargo check
 cargo test 11
+cargo check
+cargo test 11
