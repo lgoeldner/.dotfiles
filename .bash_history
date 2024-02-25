@@ -702,3 +702,9 @@ cargo check
 cargo test 11
 cargo check
 cargo test 11
+cargo add itertools
+ /usr/bin/env /bin/sh /tmp/Microsoft-MIEngine-Cmd-r3igeumn.d3t 
+cargo test 11_2
+cargo check
+cargo test 11_2
+curl -s https://packagecloud.io/install/repositories/ookla/speedtest-cli/script.rpm.sh | sudo bash
