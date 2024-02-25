@@ -708,3 +708,41 @@ cargo test 11_2
 cargo check
 cargo test 11_2
 curl -s https://packagecloud.io/install/repositories/ookla/speedtest-cli/script.rpm.sh | sudo bash
+cargo build
+rustup target add x86_64-unknown-linux-musl
+cargo build --target=x86_64-unknown-linux-musl
+rustup show
+rustup default x86_64-unknown-linux-musl
+rustup default stable_x86_64-unknown-linux-musl
+rustup show
+rustup override set musl
+rustup override set x86_64-unknown-linux-musl
+cargo build --target x86_64-unknown-linux-musl
+RUSTFLAGS="-C linker=mold"; cargo b
+RUSTFLAGS="-Clinker=rust-lld"; cargo b
+RUSTFLAGS="-Clinker=rust-lld"; cargo b --target=x86_64-unknown-linux-gnu
+cargo build
+cargo tree
+cargo build --locked
+RUSTFLAGS="-C target-feature=-crt-static" cargo build
+RUSTFLAGS="-C target-feature=-crt-static link-arg=-fuse-ld=mold" cargo build
+RUSTFLAGS="-C target-feature=-crt-static -Clink-arg=-fuse-ld=mold" cargo build
+RUSTFLAGS="-C target-feature=-crt-static -C link-arg=-fuse-ld=mold" cargo build
+RUSTFLAGS="-C target-feature=-crt-static link-arg=-fuse-ld=mold" cargo build
+rustuo 
+rustup show
+cargo build
+RUSTFLAGS='-C target-feature=+crt-static' cargo b
+cargo b
+cargo install --path .
+cargo build
+cargo install --path .
+tetris-tui 
+cargo check
+cargo bench
+cargo run
+cargo check
+cargo run
+cargo check
+cargo add itertools
+ls
